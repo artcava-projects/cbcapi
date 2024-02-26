@@ -184,3 +184,89 @@ IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.J
 2024-02-26 11:52:09.881 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI) in 76.7373ms
 2024-02-26 11:52:09.881 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI)'
 2024-02-26 11:52:09.881 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Event/Get?eventId=1 - 200 null application/json; charset=utf-8 101.3133ms
+2024-02-26 15:30:32.658 +01:00 [INF] Starting web application
+2024-02-26 15:30:34.606 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-02-26 15:30:35.239 +01:00 [INF] User profile is available. Using 'C:\Users\MarcoCavallo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-26 15:30:35.434 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-26 15:30:35.434 +01:00 [INF] Hosting environment: Development
+2024-02-26 15:30:35.434 +01:00 [INF] Content root path: C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI
+2024-02-26 15:30:35.511 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 15:30:35.918 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-26 15:30:35.918 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 413.2146ms
+2024-02-26 15:30:35.931 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - 200 13794 application/javascript; charset=utf-8 3.7409ms
+2024-02-26 15:30:36.068 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_vs/browserLink - null null
+2024-02-26 15:30:36.132 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.8021ms
+2024-02-26 15:30:36.219 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - null null
+2024-02-26 15:30:36.302 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 15:30:36.305 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 3.1998ms
+2024-02-26 15:30:36.345 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.6148ms
+2024-02-26 15:31:40.954 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44394/Calc/Calc - application/json 102
+2024-02-26 15:31:42.041 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:31:42.063 +01:00 [INF] Route matched with {action = "AddCalc", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddCalc(CenturyBelongingCalculatorAPI.Features.AddCalcCommand) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-26 15:31:42.159 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 15:31:42.522 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.ConflictObjectResult in 358.8521ms.
+2024-02-26 15:31:42.528 +01:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 15:31:42.537 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 470.929ms
+2024-02-26 15:31:42.538 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:31:42.540 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44394/Calc/Calc - 409 null application/json; charset=utf-8 1585.5041ms
+2024-02-26 15:33:01.871 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44394/Calc/Calc - application/json 102
+2024-02-26 15:33:01.884 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:33:01.896 +01:00 [INF] Route matched with {action = "AddCalc", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddCalc(CenturyBelongingCalculatorAPI.Features.AddCalcCommand) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-26 15:33:01.937 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 15:33:19.443 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.ConflictObjectResult in 17505.2233ms.
+2024-02-26 15:33:19.443 +01:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 15:33:19.444 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 17547.9114ms
+2024-02-26 15:33:19.444 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:33:19.444 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44394/Calc/Calc - 409 null application/json; charset=utf-8 17574.5317ms
+2024-02-26 15:33:29.117 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44394/Calc/Calc - application/json 102
+2024-02-26 15:33:29.120 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:33:29.121 +01:00 [INF] Route matched with {action = "AddCalc", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddCalc(CenturyBelongingCalculatorAPI.Features.AddCalcCommand) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-26 15:33:29.142 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 15:33:38.886 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 9743.9133ms.
+2024-02-26 15:33:38.887 +01:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CenturyBelongingCalculatorAPI.Features.CalcResult'.
+2024-02-26 15:33:38.919 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 9798.6051ms
+2024-02-26 15:33:38.920 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:33:38.920 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44394/Calc/Calc - 201 null application/json; charset=utf-8 9803.166ms
+2024-02-26 15:34:37.120 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44394/Calc/Calc - application/json 102
+2024-02-26 15:34:37.128 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:34:37.128 +01:00 [INF] Route matched with {action = "AddCalc", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddCalc(CenturyBelongingCalculatorAPI.Features.AddCalcCommand) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-26 15:34:37.147 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 15:34:41.586 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 4439.0177ms.
+2024-02-26 15:34:41.586 +01:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CenturyBelongingCalculatorAPI.Features.CalcResult'.
+2024-02-26 15:34:41.588 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 4459.6727ms
+2024-02-26 15:34:41.588 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-26 15:34:41.589 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44394/Calc/Calc - 201 null application/json; charset=utf-8 4470.7679ms
+2024-02-26 16:10:00.559 +01:00 [INF] Starting web application
+2024-02-26 16:10:02.278 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-02-26 16:10:02.507 +01:00 [INF] User profile is available. Using 'C:\Users\MarcoCavallo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-26 16:10:02.654 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-26 16:10:02.654 +01:00 [INF] Hosting environment: Development
+2024-02-26 16:10:02.654 +01:00 [INF] Content root path: C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI
+2024-02-26 16:10:02.703 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 16:10:03.023 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-26 16:10:03.025 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 327.4731ms
+2024-02-26 16:10:03.027 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - 200 13794 application/javascript; charset=utf-8 3.2459ms
+2024-02-26 16:10:03.164 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_vs/browserLink - null null
+2024-02-26 16:10:03.213 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.283ms
+2024-02-26 16:10:03.311 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - null null
+2024-02-26 16:10:03.407 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 16:10:03.410 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 3.0125ms
+2024-02-26 16:10:03.447 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.6003ms
+2024-02-26 16:10:41.120 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/Calc/GetJoin?startDate=1969-08-06&eventId=1 - null null
+2024-02-26 16:10:41.282 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-26 16:10:41.300 +01:00 [INF] Route matched with {action = "GetJoinDate", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.DateTimeOffset]] GetJoinDateAsync(System.DateTimeOffset, Int32) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-26 16:10:41.377 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 16:10:41.616 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 235.5082ms.
+2024-02-26 16:10:41.621 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.DateTimeOffset'.
+2024-02-26 16:10:41.630 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) in 327.9885ms
+2024-02-26 16:10:41.631 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-26 16:10:41.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/Calc/GetJoin?startDate=1969-08-06&eventId=1 - 200 null application/json; charset=utf-8 512.4248ms
+2024-02-26 16:11:16.495 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/Calc/GetJoin?startDate=1969-03-14&eventId=1 - null null
+2024-02-26 16:11:16.549 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-26 16:11:16.551 +01:00 [INF] Route matched with {action = "GetJoinDate", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.DateTimeOffset]] GetJoinDateAsync(System.DateTimeOffset, Int32) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-26 16:11:16.586 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 16:11:16.602 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.3464ms.
+2024-02-26 16:11:16.603 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.DateTimeOffset'.
+2024-02-26 16:11:16.603 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) in 52.4769ms
+2024-02-26 16:11:16.604 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-26 16:11:16.604 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/Calc/GetJoin?startDate=1969-03-14&eventId=1 - 200 null application/json; charset=utf-8 109.3517ms

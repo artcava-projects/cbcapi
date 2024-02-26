@@ -21,8 +21,8 @@ public class GetEventHandler : IRequestHandler<GetEventQuery, EventResult>
 
     public async Task<EventResult> Handle(GetEventQuery request, CancellationToken cancellationToken)
     {
-        var agency = await _serviceManager.Event.GetEventByIdAsync(request.EventId);
-        var results = _mapper.Map<EventResult>(agency);
+        var aevent = await _serviceManager.Event.GetEventByIdAsync(request.EventId);
+        var results = _mapper.Map<EventResult>(aevent);
         return results;
     }
 }

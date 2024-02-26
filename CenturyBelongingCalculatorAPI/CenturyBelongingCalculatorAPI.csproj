@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="Features\Events\Command\" />
+    <Folder Include="Features\Events\Service\" />
   </ItemGroup>
 
 </Project>
