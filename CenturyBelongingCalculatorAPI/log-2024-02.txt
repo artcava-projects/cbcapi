@@ -1,0 +1,186 @@
+2024-02-26 11:04:21.216 +01:00 [INF] Starting web application
+2024-02-26 11:04:22.863 +01:00 [FTL] Application terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CenturyBelongingCalculatorAPI.Features.GetEventQuery,CenturyBelongingCalculatorAPI.Features.EventResult] Lifetime: Transient ImplementationType: CenturyBelongingCalculatorAPI.Features.GetEventHandler': Unable to resolve service for type 'CenturyBelongingCalculatorAPI.ServiceManager.IServiceManager' while attempting to activate 'CenturyBelongingCalculatorAPI.Features.GetEventHandler'.) (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CenturyBelongingCalculatorAPI.Features.GetEventsQuery,System.Collections.Generic.IEnumerable`1[CenturyBelongingCalculatorAPI.Features.EventResult]] Lifetime: Transient ImplementationType: CenturyBelongingCalculatorAPI.Features.GetEventsHandler': Unable to resolve service for type 'CenturyBelongingCalculatorAPI.ServiceManager.IServiceManager' while attempting to activate 'CenturyBelongingCalculatorAPI.Features.GetEventsHandler'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CenturyBelongingCalculatorAPI.Features.GetEventQuery,CenturyBelongingCalculatorAPI.Features.EventResult] Lifetime: Transient ImplementationType: CenturyBelongingCalculatorAPI.Features.GetEventHandler': Unable to resolve service for type 'CenturyBelongingCalculatorAPI.ServiceManager.IServiceManager' while attempting to activate 'CenturyBelongingCalculatorAPI.Features.GetEventHandler'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CenturyBelongingCalculatorAPI.ServiceManager.IServiceManager' while attempting to activate 'CenturyBelongingCalculatorAPI.Features.GetEventHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI\Program.cs:line 59
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CenturyBelongingCalculatorAPI.Features.GetEventsQuery,System.Collections.Generic.IEnumerable`1[CenturyBelongingCalculatorAPI.Features.EventResult]] Lifetime: Transient ImplementationType: CenturyBelongingCalculatorAPI.Features.GetEventsHandler': Unable to resolve service for type 'CenturyBelongingCalculatorAPI.ServiceManager.IServiceManager' while attempting to activate 'CenturyBelongingCalculatorAPI.Features.GetEventsHandler'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CenturyBelongingCalculatorAPI.ServiceManager.IServiceManager' while attempting to activate 'CenturyBelongingCalculatorAPI.Features.GetEventsHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2024-02-26 11:05:27.257 +01:00 [INF] Starting web application
+2024-02-26 11:16:08.568 +01:00 [INF] Starting web application
+2024-02-26 11:16:15.835 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-02-26 11:16:18.108 +01:00 [INF] User profile is available. Using 'C:\Users\MarcoCavallo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-26 11:16:18.314 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-26 11:16:18.315 +01:00 [INF] Hosting environment: Development
+2024-02-26 11:16:18.315 +01:00 [INF] Content root path: C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI
+2024-02-26 11:16:18.402 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 11:16:19.319 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 922.2963ms
+2024-02-26 11:16:19.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/swagger-ui-bundle.js - null null
+2024-02-26 11:16:19.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/swagger-ui.css - null null
+2024-02-26 11:16:19.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/swagger-ui-standalone-preset.js - null null
+2024-02-26 11:16:19.362 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-26 11:16:19.390 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - 200 13794 application/javascript; charset=utf-8 27.1884ms
+2024-02-26 11:16:19.411 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-26 11:16:19.411 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-26 11:16:19.411 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-26 11:16:19.413 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/swagger-ui.css - 200 144929 text/css 51.8132ms
+2024-02-26 11:16:19.428 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 65.9817ms
+2024-02-26 11:16:19.433 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 71.1173ms
+2024-02-26 11:16:19.495 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_vs/browserLink - null null
+2024-02-26 11:16:19.547 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.1947ms
+2024-02-26 11:16:19.724 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - null null
+2024-02-26 11:16:19.795 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 11:16:19.797 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 2.6234ms
+2024-02-26 11:16:19.878 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.9179ms
+2024-02-26 11:16:47.759 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/Event - null null
+2024-02-26 11:16:47.944 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-02-26 11:16:47.947 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-02-26 11:16:47.948 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/Event - 401 null null 188.3633ms
+2024-02-26 11:17:42.548 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/Event/GetEvent?eventId=1 - null null
+2024-02-26 11:17:42.552 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-02-26 11:17:42.553 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-02-26 11:17:42.553 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/Event/GetEvent?eventId=1 - 401 null null 5.0465ms
+2024-02-26 11:19:30.324 +01:00 [INF] Starting web application
+2024-02-26 11:19:38.080 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-02-26 11:19:38.710 +01:00 [INF] User profile is available. Using 'C:\Users\MarcoCavallo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-26 11:19:38.880 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-26 11:19:38.881 +01:00 [INF] Hosting environment: Development
+2024-02-26 11:19:38.881 +01:00 [INF] Content root path: C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI
+2024-02-26 11:19:38.926 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 11:19:39.224 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 302.4284ms
+2024-02-26 11:19:39.229 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-26 11:19:39.239 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - 200 13794 application/javascript; charset=utf-8 3.4991ms
+2024-02-26 11:19:39.376 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_vs/browserLink - null null
+2024-02-26 11:19:39.434 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.077ms
+2024-02-26 11:19:39.627 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - null null
+2024-02-26 11:19:39.680 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 11:19:39.685 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 4.8956ms
+2024-02-26 11:19:39.734 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.138ms
+2024-02-26 11:19:47.052 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/Event/List - null null
+2024-02-26 11:19:48.144 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-02-26 11:19:48.147 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-02-26 11:19:48.148 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/Event/List - 401 null null 1096.1205ms
+2024-02-26 11:32:44.616 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Event/List - null null
+2024-02-26 11:32:44.630 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Event/List - 307 null null 13.9881ms
+2024-02-26 11:32:44.637 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Event/List - null null
+2024-02-26 11:32:45.292 +01:00 [INF] Microsoft.IdentityModel Version: 7.3.1.0. Date 02/26/2024 10:32:45. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-26 11:32:45.298 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-26 11:32:45.302 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-26 11:32:45.709 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-26 11:32:45.719 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI)'
+2024-02-26 11:32:45.738 +01:00 [INF] Route matched with {action = "Get", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CenturyBelongingCalculatorAPI.Features.EventResult]]] Get() on controller CenturyBelongingCalculatorAPI.Controllers.EventController (CenturyBelongingCalculatorAPI).
+2024-02-26 11:32:45.841 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 11:32:46.282 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI) in 541.9219ms
+2024-02-26 11:32:46.284 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI)'
+2024-02-26 11:32:46.289 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[CenturyBelongingCalculatorAPI.Domain.Event, CenturyBelongingCalculatorAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[CenturyBelongingCalculatorAPI.Features.EventResult, CenturyBelongingCalculatorAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Event -> EventResult
+CenturyBelongingCalculatorAPI.Domain.Event -> CenturyBelongingCalculatorAPI.Features.EventResult
+   at lambda_method60(Closure, Event, EventResult, ResolutionContext)
+   at lambda_method59(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method59(Closure, Object, IEnumerable`1, ResolutionContext)
+   at CenturyBelongingCalculatorAPI.Features.GetEventsHandler.Handle(GetEventsQuery request, CancellationToken cancellationToken) in C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI\Features\Events\Query\GetEventsQuery.cs:line 27
+   at CenturyBelongingCalculatorAPI.Controllers.EventController.Get() in C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI\Controllers\EventController.cs:line 34
+   at lambda_method50(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-26 11:32:46.337 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Event/List - 500 null text/plain; charset=utf-8 1699.7993ms
+2024-02-26 11:49:30.309 +01:00 [INF] Starting web application
+2024-02-26 11:49:31.749 +01:00 [INF] Saved 1 entities to in-memory store.
+2024-02-26 11:49:31.955 +01:00 [INF] User profile is available. Using 'C:\Users\MarcoCavallo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-26 11:49:32.112 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-26 11:49:32.113 +01:00 [INF] Hosting environment: Development
+2024-02-26 11:49:32.113 +01:00 [INF] Content root path: C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI
+2024-02-26 11:49:32.159 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 11:49:32.466 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-26 11:49:32.467 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 311.6389ms
+2024-02-26 11:49:32.470 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - 200 13794 application/javascript; charset=utf-8 3.6059ms
+2024-02-26 11:49:32.612 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_vs/browserLink - null null
+2024-02-26 11:49:32.682 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.0936ms
+2024-02-26 11:49:32.775 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - null null
+2024-02-26 11:49:32.842 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-26 11:49:32.850 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 7.5369ms
+2024-02-26 11:49:32.940 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.2558ms
+2024-02-26 11:49:50.504 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Event/List - null null
+2024-02-26 11:49:50.509 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Event/List - 307 null null 4.5707ms
+2024-02-26 11:49:50.515 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Event/List - null null
+2024-02-26 11:49:51.255 +01:00 [INF] Microsoft.IdentityModel Version: 7.3.1.0. Date 02/26/2024 10:49:51. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-26 11:49:51.261 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-26 11:49:51.264 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-26 11:49:51.707 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-26 11:49:51.719 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI)'
+2024-02-26 11:49:51.731 +01:00 [INF] Route matched with {action = "Get", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CenturyBelongingCalculatorAPI.Features.EventResult]]] Get() on controller CenturyBelongingCalculatorAPI.Controllers.EventController (CenturyBelongingCalculatorAPI).
+2024-02-26 11:49:51.809 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 11:49:52.060 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 246.2702ms.
+2024-02-26 11:49:52.066 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CenturyBelongingCalculatorAPI.Features.EventResult, CenturyBelongingCalculatorAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 11:49:52.082 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI) in 346.8213ms
+2024-02-26 11:49:52.082 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.Get (CenturyBelongingCalculatorAPI)'
+2024-02-26 11:49:52.084 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Event/List - 200 null application/json; charset=utf-8 1568.7487ms
+2024-02-26 11:52:09.771 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Event/Get?eventId=1 - null null
+2024-02-26 11:52:09.774 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Event/Get?eventId=1 - 307 null null 4.3774ms
+2024-02-26 11:52:09.780 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Event/Get?eventId=1 - null null
+2024-02-26 11:52:09.792 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-26 11:52:09.792 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-26 11:52:09.792 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-26 11:52:09.793 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-26 11:52:09.795 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI)'
+2024-02-26 11:52:09.804 +01:00 [INF] Route matched with {action = "GetEventById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CenturyBelongingCalculatorAPI.Features.EventResult]] GetEventByIdAsync(Int32) on controller CenturyBelongingCalculatorAPI.Controllers.EventController (CenturyBelongingCalculatorAPI).
+2024-02-26 11:52:09.839 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-26 11:52:09.880 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.1653ms.
+2024-02-26 11:52:09.880 +01:00 [INF] Executing OkObjectResult, writing value of type 'CenturyBelongingCalculatorAPI.Features.EventResult'.
+2024-02-26 11:52:09.881 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI) in 76.7373ms
+2024-02-26 11:52:09.881 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI)'
+2024-02-26 11:52:09.881 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Event/Get?eventId=1 - 200 null application/json; charset=utf-8 101.3133ms
