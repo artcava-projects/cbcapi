@@ -10,8 +10,8 @@ public class Seed
         context.Events.Add(new Event
         {
             Id = 1,
-            Name = "21th Century",
-            Description = "Date of begin of 21th Century",
+            Name = "21st Century",
+            Description = "Start date of 21st Century",
             EventDate = new DateTimeOffset(2000, 1, 1, 0, 0, 0, new TimeSpan(0))
         });
         #endregion

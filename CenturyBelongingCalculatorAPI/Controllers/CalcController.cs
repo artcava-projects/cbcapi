@@ -2,14 +2,15 @@
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.Resource;
 
 namespace CenturyBelongingCalculatorAPI.Controllers;
 
-//[Authorize]
+[Authorize]
 [ApiController]
 [Route("[controller]")]
-//[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
+[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
 public class CalcController : ControllerBase
 {
     #region Ctor
@@ -26,6 +27,7 @@ public class CalcController : ControllerBase
     #region Query
     [HttpGet]
     [Route("GetJoin")]
+    [AuthorizeForScopes(Scopes = ["Calc.Read"])]
     public async Task<ActionResult<DateTimeOffset>> GetJoinDateAsync(DateTimeOffset startDate, int eventId)
     {
         try
@@ -55,11 +57,53 @@ public class CalcController : ControllerBase
             });
         }
     }
+
+    [HttpGet]
+    [Route("GetDaysToJoin")]
+    [AuthorizeForScopes(Scopes = ["Calc.Read"])]
+    public async Task<ActionResult<int>> GetDaysToJoinDateAsync(DateTimeOffset startDate, int eventId)
+    {
+        try
+        {
+            var query = new GetDaysToJoinDateQuery
+            {
+                StartDate = startDate,
+                EventId = eventId
+            };
+
+            var result = await _sender.Send(query);
+
+            return Ok(result);
+        }
+        catch (NoEventExistsException ex)
+        {
+            return Conflict(new
+            {
+                ex.Message
+            });
+        }
+        catch (NotAllowedCalcException ex)
+        {
+            return Conflict(new
+            {
+                ex.Message
+            });
+        }
+        catch (JoinDateElapsedException ex)
+        {
+            return Conflict(new
+            {
+                ex.Message
+            });
+        }
+    }
+
     #endregion
 
     #region Command
     [HttpPost]
     [Route("Calc")]
+    [AuthorizeForScopes(Scopes = ["Calc.Write"])]
     public async Task<ActionResult> AddCalc(AddCalcCommand command)
     {
         try

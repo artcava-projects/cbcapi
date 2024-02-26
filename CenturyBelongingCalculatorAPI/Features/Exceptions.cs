@@ -7,3 +7,5 @@ public class NoEventExistsException(int EventId): ValidationException($"Event wi
 public class NotAllowedCalcException(string EventName): ValidationException($"Calculation for event: {EventName} is not allowed!") { }
 
 public class EndDateGreaterThenStartDateException():ValidationException("End date greater then start date is ot allowed!") { }
+
+public class JoinDateElapsedException(string EventName):ValidationException($"Join date for event: {EventName} has elapsed!") { }
