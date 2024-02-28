@@ -9,6 +9,7 @@ public class AddCalcCommand : ICommand<CalcResult>
     public DateTimeOffset StartDate { get; set; }
     public DateTimeOffset EndDate { get; set; } = DateTimeOffset.Now;
     public int EventId { get; set; }
+    public required string CalcName {  get; set; }
 }
 
 public class AddCalcHandler : IRequestHandler<AddCalcCommand, CalcResult>
@@ -36,12 +37,14 @@ public class AddCalcHandler : IRequestHandler<AddCalcCommand, CalcResult>
             throw new NotAllowedCalcException(aevent.Name);
         #endregion
 
-        var result = new CalcResult { 
+        var result = new CalcResult
+        {
+            CalcName = request.CalcName,
             EventDate = aevent.EventDate,
             StartDate = request.StartDate,
             EndDate = request.EndDate,
-            EventName=aevent.Name,
-            EventDescription=aevent.Description
+            EventName = aevent.Name,
+            EventDescription = aevent.Description
         };
 
         return result;

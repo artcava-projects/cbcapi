@@ -9,3 +9,5 @@ public class NotAllowedCalcException(string EventName): ValidationException($"Ca
 public class EndDateGreaterThenStartDateException():ValidationException("End date greater then start date is ot allowed!") { }
 
 public class JoinDateElapsedException(string EventName):ValidationException($"Join date for event: {EventName} has elapsed!") { }
+
+public class NoUserAuthenticatedException(string Request):ValidationException($"No user authenticated for request: {Request}") { }

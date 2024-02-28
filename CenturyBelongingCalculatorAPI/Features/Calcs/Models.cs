@@ -3,6 +3,7 @@
 public class CalcResult
 {
     public Guid Id { get; set; } = Guid.NewGuid();
+    public required string CalcName { get; set; }
     public DateTimeOffset StartDate { get; set; }
     public DateTimeOffset EventDate { get; set; }
     public DateTimeOffset EndDate { get; set; }

@@ -1,4 +1,5 @@
-﻿using CenturyBelongingCalculatorAPI.Features;
+﻿using Azure.Core;
+using CenturyBelongingCalculatorAPI.Features;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,7 @@ public class CalcController : ControllerBase
 
     #region Query
     [HttpGet]
-    [Route("GetJoin")]
+    [Route("GetJoinDate")]
     [AuthorizeForScopes(Scopes = ["Calc.Read"])]
     public async Task<ActionResult<DateTimeOffset>> GetJoinDateAsync(DateTimeOffset startDate, int eventId)
     {
@@ -102,13 +103,15 @@ public class CalcController : ControllerBase
 
     #region Command
     [HttpPost]
-    [Route("Calc")]
+    [Route("AddCalc")]
     [AuthorizeForScopes(Scopes = ["Calc.Write"])]
     public async Task<ActionResult> AddCalc(AddCalcCommand command)
     {
         try
         {
             var result = await _sender.Send(command);
+
+            bool good = await InternalTasks.AddCalc(User.GetObjectId(), result);
 
             return CreatedAtRoute(new { countId = result.Id }, result);
         }
