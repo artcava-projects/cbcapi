@@ -1,5 +1,6 @@
 ﻿
 //using Newtonsoft.Json;
+//using Microsoft.Graph;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -7,7 +8,7 @@ namespace CenturyBelongingCalculatorAPI.Features;
 
 public static class InternalTasks
 {
-    public static async Task<bool> AddCalc(string? objectId, CalcResult json)
+    public static async Task<bool> AddCalcAsync(string? objectId, CalcResult json)
     {
         if (string.IsNullOrWhiteSpace(objectId))
             throw new NoUserAuthenticatedException("AddCalc");
@@ -40,5 +41,26 @@ public static class InternalTasks
         await JsonSerializer.SerializeAsync(fileStream, calcs, new JsonSerializerOptions { DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull });
 
         return true;
+    }
+
+    public static async Task<IEnumerable<CalcResult>> GetCalcsAsync(string? objectId)
+    {
+        if (string.IsNullOrWhiteSpace(objectId))
+            throw new NoUserAuthenticatedException("AddCalc");
+
+        List<CalcResult> calcs = [];
+
+        if (!Directory.Exists("UsersData"))
+            return calcs;
+
+        var filename = $".\\UsersData\\{objectId}.json";
+        if(!File.Exists(filename))
+            return calcs;
+
+
+        await using FileStream sJson = File.OpenRead(filename);
+        calcs = JsonSerializer.Deserialize<List<CalcResult>>(sJson) ?? ([]);
+
+        return calcs;
     }
 }

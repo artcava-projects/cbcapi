@@ -763,3 +763,132 @@ IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.J
 2024-02-28 17:36:03.082 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 25693.6062ms
 2024-02-28 17:36:03.082 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
 2024-02-28 17:36:03.083 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44394/Calc/AddCalc - 201 null application/json; charset=utf-8 25696.7653ms
+2024-02-29 09:16:17.969 +01:00 [INF] Starting web application
+2024-02-29 09:16:19.976 +01:00 [INF] Saved 4 entities to in-memory store.
+2024-02-29 09:16:20.613 +01:00 [INF] User profile is available. Using 'C:\Users\MarcoCavallo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-29 09:16:20.804 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 09:16:20.805 +01:00 [INF] Hosting environment: Development
+2024-02-29 09:16:20.805 +01:00 [INF] Content root path: C:\Users\MarcoCavallo\source\repos\CBCProject\CenturyBelongingCalculatorAPI
+2024-02-29 09:16:20.882 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-29 09:16:21.355 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-29 09:16:21.355 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 472.6068ms
+2024-02-29 09:16:21.366 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_framework/aspnetcore-browser-refresh.js - 200 13794 application/javascript; charset=utf-8 3.6706ms
+2024-02-29 09:16:21.479 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/_vs/browserLink - null null
+2024-02-29 09:16:21.628 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/index.html - null null
+2024-02-29 09:16:21.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/index.html - 200 null text/html;charset=utf-8 4.4394ms
+2024-02-29 09:16:23.105 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1626.268ms
+2024-02-29 09:16:23.140 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - null null
+2024-02-29 09:16:23.265 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44394/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.5132ms
+2024-02-29 09:16:28.059 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Event/Get?eventId=1 - null null
+2024-02-29 09:16:28.064 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Event/Get?eventId=1 - 307 null null 5.1951ms
+2024-02-29 09:16:28.070 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Event/Get?eventId=1 - null null
+2024-02-29 09:16:29.765 +01:00 [INF] Microsoft.IdentityModel Version: 7.3.1.0. Date 02/29/2024 08:16:29. PII logging is OFF. See https://aka.ms/IdentityModel/PII for details. 
+IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:16:29.771 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-29 09:16:29.773 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-29 09:16:30.069 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-29 09:16:30.082 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:16:30.099 +01:00 [INF] Route matched with {action = "GetEventById", controller = "Event"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CenturyBelongingCalculatorAPI.Features.EventResult]] GetEventByIdAsync(Int32) on controller CenturyBelongingCalculatorAPI.Controllers.EventController (CenturyBelongingCalculatorAPI).
+2024-02-29 09:16:30.183 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-29 09:17:14.040 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 43853.0496ms.
+2024-02-29 09:17:14.045 +01:00 [INF] Executing OkObjectResult, writing value of type 'CenturyBelongingCalculatorAPI.Features.EventResult'.
+2024-02-29 09:17:14.056 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI) in 43953.8801ms
+2024-02-29 09:17:14.056 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.EventController.GetEventByIdAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:17:14.058 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Event/Get?eventId=1 - 200 null application/json; charset=utf-8 45988.3255ms
+2024-02-29 09:17:51.605 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:17:51.606 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - 307 null null 1.3181ms
+2024-02-29 09:17:51.608 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:17:51.610 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:17:51.610 +01:00 [ERR] IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '28/02/2024 12:21:06', Current time (UTC): '29/02/2024 08:17:51'.
+2024-02-29 09:17:51.613 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '28/02/2024 12:21:06', Current time (UTC): '29/02/2024 08:17:51'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-02-29 09:17:51.650 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '28/02/2024 12:21:06', Current time (UTC): '29/02/2024 08:17:51'.
+2024-02-29 09:17:51.652 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-02-29 09:17:51.656 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-02-29 09:17:51.657 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - 401 null null 49.1845ms
+2024-02-29 09:18:04.413 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:18:04.414 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - 307 null null 1.9951ms
+2024-02-29 09:18:04.416 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:18:04.417 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:18:04.418 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-29 09:18:04.418 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-29 09:18:04.419 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-29 09:18:04.421 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:18:04.428 +01:00 [INF] Route matched with {action = "GetJoinDate", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.DateTimeOffset]] GetJoinDateAsync(System.DateTimeOffset, Int32) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-29 09:18:04.451 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-29 09:18:04.469 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.2235ms.
+2024-02-29 09:18:04.469 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.DateTimeOffset'.
+2024-02-29 09:18:04.472 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) in 43.8234ms
+2024-02-29 09:18:04.472 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:18:04.472 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - 200 null application/json; charset=utf-8 56.2271ms
+2024-02-29 09:18:27.548 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:18:27.564 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - 307 null null 16.4867ms
+2024-02-29 09:18:27.569 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:18:27.576 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:18:27.576 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-29 09:18:27.576 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-29 09:18:27.581 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-29 09:18:27.581 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:18:27.582 +01:00 [INF] Route matched with {action = "GetJoinDate", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.DateTimeOffset]] GetJoinDateAsync(System.DateTimeOffset, Int32) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-29 09:18:27.599 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-29 09:18:27.601 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3953ms.
+2024-02-29 09:18:27.601 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.DateTimeOffset'.
+2024-02-29 09:18:27.602 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI) in 19.7175ms
+2024-02-29 09:18:27.602 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:18:27.602 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Calc/GetJoinDate?StartDate=1969-08-06&EventId=1 - 200 null application/json; charset=utf-8 34.0128ms
+2024-02-29 09:18:47.256 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:18:47.257 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - 307 null null 0.878ms
+2024-02-29 09:18:47.265 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:18:47.265 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-02-29 09:18:47.266 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-02-29 09:18:47.266 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - 401 null null 1.6038ms
+2024-02-29 09:19:00.363 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:45422/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:19:00.364 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:45422/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - 307 null null 1.2931ms
+2024-02-29 09:19:00.366 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:44394/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - null null
+2024-02-29 09:19:00.366 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:19:00.367 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-29 09:19:00.367 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-29 09:19:00.367 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-29 09:19:00.367 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetDaysToJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:19:00.371 +01:00 [INF] Route matched with {action = "GetDaysToJoinDate", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32]] GetDaysToJoinDateAsync(System.DateTimeOffset, Int32) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-29 09:19:00.388 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetDaysToJoinDateAsync (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-29 09:19:00.393 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.GetDaysToJoinDateAsync (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.2462ms.
+2024-02-29 09:19:00.393 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-02-29 09:19:00.396 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.GetDaysToJoinDateAsync (CenturyBelongingCalculatorAPI) in 25.2168ms
+2024-02-29 09:19:00.397 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.GetDaysToJoinDateAsync (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:19:00.397 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:44394/Calc/GetDaysToJoin?StartDate=1969-08-06&EventId=1 - 200 null application/json; charset=utf-8 31.2455ms
+2024-02-29 09:21:38.703 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:45422/Calc/AddCalc - application/json 111
+2024-02-29 09:21:38.716 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:45422/Calc/AddCalc - 307 null null 13.5415ms
+2024-02-29 09:21:38.723 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44394/Calc/AddCalc - application/json 111
+2024-02-29 09:21:38.724 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:21:38.724 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-29 09:21:38.724 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-29 09:21:38.724 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-29 09:21:38.724 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:21:38.727 +01:00 [INF] Route matched with {action = "AddCalc", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddCalc(CenturyBelongingCalculatorAPI.Features.AddCalcCommand) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-29 09:21:38.757 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-29 09:24:09.926 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 151168.6137ms.
+2024-02-29 09:24:09.926 +01:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CenturyBelongingCalculatorAPI.Features.CalcResult'.
+2024-02-29 09:24:17.113 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 158384.9309ms
+2024-02-29 09:24:17.113 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:24:17.113 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44394/Calc/AddCalc - 201 null application/json; charset=utf-8 158390.2632ms
+2024-02-29 09:24:44.000 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:45422/Calc/AddCalc - application/json 111
+2024-02-29 09:24:44.010 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:45422/Calc/AddCalc - 307 null null 10.2932ms
+2024-02-29 09:24:44.010 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:44394/Calc/AddCalc - application/json 111
+2024-02-29 09:24:44.012 +01:00 [INF] IDX10242: Security token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' has a valid signature.
+2024-02-29 09:24:44.012 +01:00 [INF] IDX10239: Lifetime of the token is valid.
+2024-02-29 09:24:44.012 +01:00 [INF] IDX10234: Audience Validated.Audience: '0f3cb2e2-496d-4de8-94f4-2d6c7940fc23'
+2024-02-29 09:24:44.012 +01:00 [INF] IDX10245: Creating claims identity from the validated token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2024-02-29 09:24:44.018 +01:00 [INF] Executing endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:24:44.018 +01:00 [INF] Route matched with {action = "AddCalc", controller = "Calc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddCalc(CenturyBelongingCalculatorAPI.Features.AddCalcCommand) on controller CenturyBelongingCalculatorAPI.Controllers.CalcController (CenturyBelongingCalculatorAPI).
+2024-02-29 09:24:44.036 +01:00 [INF] Executing action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) - Validation state: "Valid"
+2024-02-29 09:24:54.317 +01:00 [INF] Executed action method CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 10280.6647ms.
+2024-02-29 09:24:54.318 +01:00 [INF] Executing CreatedAtRouteResult, writing value of type 'CenturyBelongingCalculatorAPI.Features.CalcResult'.
+2024-02-29 09:24:54.319 +01:00 [INF] Executed action CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI) in 10300.9665ms
+2024-02-29 09:24:54.319 +01:00 [INF] Executed endpoint 'CenturyBelongingCalculatorAPI.Controllers.CalcController.AddCalc (CenturyBelongingCalculatorAPI)'
+2024-02-29 09:24:54.319 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:44394/Calc/AddCalc - 201 null application/json; charset=utf-8 10308.8686ms

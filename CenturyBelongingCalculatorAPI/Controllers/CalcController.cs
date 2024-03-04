@@ -1,10 +1,12 @@
 ﻿using Azure.Core;
 using CenturyBelongingCalculatorAPI.Features;
+using CenturyBelongingCalculatorAPI.Features.Calcs.Query;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.Resource;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace CenturyBelongingCalculatorAPI.Controllers;
 
@@ -99,6 +101,27 @@ public class CalcController : ControllerBase
         }
     }
 
+    [HttpGet]
+    [Route("GetCalcList")]
+    [AuthorizeForScopes(Scopes = ["Calc.Read"])]
+    public async Task<ActionResult<CalcResult[]>> GetCalcListAsync()
+    {
+        try
+        {
+            var result = await InternalTasks.GetCalcsAsync(User.GetObjectId());
+            //var result = await _sender.Send(new GetCalcListQuery());
+
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return Conflict(new
+            {
+                ex.Message
+            });
+        }
+    }
+
     #endregion
 
     #region Command
@@ -111,7 +134,7 @@ public class CalcController : ControllerBase
         {
             var result = await _sender.Send(command);
 
-            bool good = await InternalTasks.AddCalc(User.GetObjectId(), result);
+            bool good = await InternalTasks.AddCalcAsync(User.GetObjectId(), result);
 
             return CreatedAtRoute(new { countId = result.Id }, result);
         }
